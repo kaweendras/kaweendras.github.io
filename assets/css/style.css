@@ -1882,3 +1882,14 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .new-hyperlinks { color: var(--orange-yellow-crayola); }
+
+
+.download-icon {
+  display: inline-block;
+  margin-left: 3px; /* Adjust the margin as needed */
+  font-size: 15px; /* Adjust the font size as needed */
+  position: relative;
+  transition: color 0.3s; /* Add a smooth transition effect on color change */
+}
+
+
