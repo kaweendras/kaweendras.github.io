@@ -10,7 +10,7 @@ from reportlab.pdfgen import canvas
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT = ROOT / "output" / "pdf" / "CV-SalithaWijerathna-2026-03-themed.pdf"
+OUTPUT = ROOT / "output" / "pdf" / "CV-SalithaWijerathna-2026-mid.pdf"
 
 W, H = A4
 INK = colors.HexColor("#171719")
