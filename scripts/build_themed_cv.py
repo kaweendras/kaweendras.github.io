@@ -117,7 +117,7 @@ def job(c, y, dates, location, title, company, company_url, intro, bullets):
     c.setStrokeColor(LINE)
     c.setLineWidth(0.45)
     c.line(RIGHT_X, y - 3, RIGHT_X + RIGHT_W, y - 3)
-    return y - 28
+    return y - 25
 
 
 def build():
@@ -256,11 +256,11 @@ def build():
         "https://xigenix.com/",
         "Full-stack blockchain and AI development with AWS, CDK, Lambda, Solidity, Ethers.js and Node.js.",
         [
-            "Developed multi-model AI, natural-language ordering and RAG systems with OpenAI, Ollama, Pinecone and ChromaDB.",
-            "Architected a multi-tenant Amazon Q Business assistant with AWS CDK, tool integrations, prompt fine-tuning and evaluation workflows.",
-            "Implemented MCP access to internal services and improved tool execution and context handling.",
-            "Delivered MyCarbon on Arbitrum with custom smart contracts and Lokblok Toughbox wallet security.",
-            "Led company-wide SonarQube adoption for automated code-quality and security analysis.",
+            "AI Solutions: Developed multi-model natural-language ordering and RAG systems with OpenAI, Ollama, Pinecone and ChromaDB.",
+            "SKY AI: Architected a multi-tenant Amazon Q Business assistant with AWS CDK, tool integrations, prompt fine-tuning and evaluation workflows.",
+            "MCP Integration: Connected Claude Desktop to internal services and improved tool execution and context handling.",
+            "MyCarbon Platform: Delivered an Arbitrum solution with custom smart contracts and Lokblok Toughbox wallet security.",
+            "Code Quality Initiative: Led company-wide SonarQube adoption for automated code-quality and security analysis.",
         ],
     )
 
@@ -274,10 +274,11 @@ def build():
         "https://blockstarsglobal.com/",
         "Built MERN and Web3 products using Web3.js and Solidity; also contributed as Project Lead and supported QA.",
         [
-            "Delivered NFT marketplaces using ERC-721 and ERC-1155 contracts with OpenSea-compatible minting.",
-            "Created an ERC-20 token generator and re-engineered MetaMask as a Polygon-based custom wallet.",
-            "Built middleware connecting a KOSPI/KOSDAQ platform to Ebest and automated daily KRX market-data collection.",
-            "Developed and deployed GREEN P2P, a containerised Tatum.io custodial wallet with gas-free transactions.",
+            "K-Culture, NFT Real Estate and Fauna NFT: Delivered full-stack marketplaces with ERC-721/1155 contracts and OpenSea-compatible minting.",
+            "Token Generator: Developed ERC-20 token-generation contracts and frontend functionality.",
+            "StarApple: Re-engineered MetaMask for Polygon with custom-token support.",
+            "Futures-Trading Platform: Built Ebest middleware and automated daily KRX market-data collection.",
+            "GREEN P2P: Developed and deployed a containerised Tatum.io custodial wallet with gas-free transactions.",
         ],
     )
 
@@ -291,8 +292,10 @@ def build():
         "https://www.upwork.com/",
         "Delivered web, mobile, Web3 and machine-learning solutions using MERN, PHP, Python, Go and Java.",
         [
-            "Built DIG-NFT on the XRP Ledger and the Node.js / MongoDB backend for MathBuddy.",
-            "Created a Scikit-learn clothing predictor exposed through FastAPI and an educational Java / MySQL math game.",
+            "DIG-NFT: Built a decentralised NFT marketplace using the XRP Ledger.",
+            "MathBuddy: Developed its Node.js, Express and MongoDB Atlas backend.",
+            "Cloth Predictor: Built a Scikit-learn model exposed through FastAPI.",
+            "Math Game: Developed an educational Java and MySQL application.",
         ],
     )
 
