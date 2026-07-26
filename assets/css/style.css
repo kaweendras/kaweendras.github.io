@@ -29,7 +29,7 @@ body {
     #181818;
   background-size: auto, 6px 6px, auto;
   font-family: var(--body);
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
 }
@@ -94,7 +94,7 @@ button {
   border: 0;
   color: rgba(255, 255, 255, 0.72);
   background: none;
-  font-size: 13px;
+  font-size: 14px;
   text-decoration: none;
   cursor: pointer;
   transition: color 180ms ease;
@@ -117,7 +117,7 @@ button {
   padding: 9px 15px;
   border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: 999px;
-  font-size: 12px;
+  font-size: 13px;
   text-decoration: none;
   transition: background 180ms ease, color 180ms ease;
 }
@@ -221,7 +221,7 @@ button {
   margin: 0 0 16px;
   color: var(--muted);
   font-family: var(--display);
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -239,7 +239,7 @@ button {
 
 .role {
   margin: 17px 0 0;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -266,7 +266,7 @@ button {
   margin: 0 0 34px;
   padding-bottom: 30px;
   border-bottom: 1px solid var(--line);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .profile-grid {
@@ -301,7 +301,7 @@ h2 {
 .skill-group h3,
 .education-list h3 {
   margin: 0 0 3px;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 700;
   text-transform: lowercase;
 }
@@ -310,15 +310,15 @@ h2 {
 .education-list p {
   margin: 0;
   color: var(--muted);
-  font-size: 10px;
-  line-height: 1.55;
+  font-size: 12px;
+  line-height: 1.6;
 }
 
 .education-list time {
   display: block;
   margin-bottom: 4px;
   color: var(--muted);
-  font-size: 9px;
+  font-size: 11px;
 }
 
 .contact-list {
@@ -326,7 +326,7 @@ h2 {
   margin-top: 18px;
   flex-direction: column;
   gap: 5px;
-  font-size: 10px;
+  font-size: 12px;
   font-style: normal;
   overflow-wrap: anywhere;
 }
@@ -346,7 +346,7 @@ h2 {
 
 .section-heading span {
   color: var(--muted);
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.12em;
 }
 
@@ -363,20 +363,20 @@ h2 {
   display: flex;
   margin-bottom: 6px;
   color: var(--muted);
-  font-size: 9px;
+  font-size: 11px;
   justify-content: space-between;
 }
 
 .job h3,
 .compact-job h3 {
   margin: 0;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 1.25;
 }
 
 .company {
   margin: 2px 0 10px;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 600;
 }
 
@@ -384,7 +384,7 @@ h2 {
 .compact-job p:last-child {
   margin: 0;
   color: #3f3e42;
-  font-size: 10px;
+  font-size: 12.5px;
 }
 
 .impact-list {
@@ -397,7 +397,7 @@ h2 {
   position: relative;
   margin-top: 6px;
   padding-left: 12px;
-  font-size: 9.5px;
+  font-size: 12px;
 }
 
 .impact-list li::before {
@@ -410,7 +410,7 @@ h2 {
   display: flex;
   margin-top: 64px;
   color: var(--muted);
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 0.08em;
   justify-content: space-between;
   text-transform: uppercase;
@@ -428,7 +428,7 @@ h2 {
   max-width: 225px;
   margin: 0;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .project-list {
@@ -459,20 +459,20 @@ h2 {
 
 .project-number {
   color: var(--muted);
-  font-size: 9px;
+  font-size: 11px;
 }
 
 .project-toggle strong {
   display: block;
   font-family: var(--display);
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .project-toggle small {
   display: block;
   margin-top: 2px;
   color: var(--muted);
-  font-size: 9px;
+  font-size: 11px;
 }
 
 .toggle-mark {
@@ -515,7 +515,7 @@ h2 {
 .project-details p {
   margin: 0;
   color: #3f3e42;
-  font-size: 10px;
+  font-size: 12.5px;
 }
 
 .tag-list {
@@ -531,7 +531,7 @@ h2 {
   padding: 3px 7px;
   border: 1px solid rgba(23, 23, 25, 0.25);
   border-radius: 999px;
-  font-size: 8px;
+  font-size: 10px;
 }
 
 .earlier-experience {
@@ -548,7 +548,7 @@ h2 {
 
 .compact-job time {
   color: var(--muted);
-  font-size: 9px;
+  font-size: 11px;
 }
 
 blockquote {
