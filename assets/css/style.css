@@ -65,7 +65,7 @@ button {
   position: relative;
   z-index: 20;
   display: flex;
-  width: min(1480px, calc(100% - 64px));
+  width: min(980px, calc(100% - 64px));
   margin: 0 auto;
   padding: 24px 0 18px;
   align-items: center;
@@ -130,16 +130,14 @@ button {
 
 .desk {
   display: grid;
-  width: min(1480px, calc(100% - 64px));
+  width: min(980px, calc(100% - 64px));
   margin: 18px auto 80px;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(34px, 5vw, 82px);
-  align-items: start;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 48px;
 }
 
 .paper {
   position: relative;
-  min-height: 1030px;
   padding: clamp(42px, 4.2vw, 70px);
   overflow: hidden;
   background:
@@ -409,11 +407,8 @@ h2 {
 }
 
 .page-footer {
-  position: absolute;
-  right: clamp(42px, 4.2vw, 70px);
-  bottom: 28px;
-  left: clamp(42px, 4.2vw, 70px);
   display: flex;
+  margin-top: 64px;
   color: var(--muted);
   font-size: 8px;
   letter-spacing: 0.08em;
@@ -575,16 +570,11 @@ blockquote p {
 
 @media (max-width: 1180px) {
   .desk {
-    width: min(760px, calc(100% - 48px));
-    grid-template-columns: 1fr;
-  }
-
-  .paper {
-    min-height: 1030px;
+    width: min(900px, calc(100% - 48px));
   }
 
   .site-header {
-    width: min(760px, calc(100% - 48px));
+    width: min(900px, calc(100% - 48px));
   }
 }
 
