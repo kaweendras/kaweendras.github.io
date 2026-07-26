@@ -1,1283 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume | Kaweendra</title>
-
-  <!--
-    - favicon
-  -->
-  <!-- <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon"> -->
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
+  <meta name="description" content="Portfolio and résumé of Salitha Kaweendra, a full-stack software engineer specialising in blockchain and AI.">
+  <meta name="theme-color" content="#171717">
+  <title>Salitha Kaweendra — Software Engineer</title>
+  <link rel="icon" href="./assets/images/logo.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/script.js" defer></script>
 </head>
-
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <!--
-    - #MAIN
-  -->
+  <header class="site-header">
+    <a class="wordmark" href="#intro" aria-label="Salitha Kaweendra, home">SK<span>.</span></a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="text-button" type="button" data-print>Print CV</button>
+      <a class="download-button" href="./assets/cv/CV-SalithaWijerathna-2026-03.pdf" download>Download PDF</a>
+    </div>
+  </header>
 
-  <main>
+  <main id="main-content" class="desk">
+    <article class="paper paper-profile" id="intro">
+      <div class="tape tape-left" aria-hidden="true"></div>
+      <div class="wash wash-profile" aria-hidden="true"></div>
 
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+      <header class="intro">
+        <div>
+          <p class="eyebrow">Portfolio / 2026</p>
+          <h1>salitha<br>kaweendra</h1>
+          <p class="role">software engineer · blockchain · ai</p>
+        </div>
+        <figure class="portrait">
+          <img src="./assets/images/my-avatar.png" alt="Portrait of Salitha Kaweendra">
         </figure>
+      </header>
 
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Salitha Kaweendra</h1>
+      <p class="summary">
+        Full-stack engineer building dependable software across web, blockchain and AI.
+        I turn complex requirements into useful products—from smart-contract platforms
+        and secure wallets to RAG applications and cloud-native services.
+      </p>
 
-          <p class="title">Software Engineer</p>
+      <div class="profile-grid">
+        <aside class="profile-sidebar">
+          <section aria-labelledby="skills-heading">
+            <h2 id="skills-heading">skills</h2>
+            <div class="skill-groups">
+              <div class="skill-group">
+                <h3>backend / web</h3>
+                <p>JavaScript, TypeScript, Node.js, Express, Python, FastAPI, REST</p>
+              </div>
+              <div class="skill-group">
+                <h3>blockchain</h3>
+                <p>Solidity, Web3.js, Ethers.js, Smart Contracts, EVM, L2, DeFi</p>
+              </div>
+              <div class="skill-group">
+                <h3>ai</h3>
+                <p>LLMs, RAG, NLP, LangChain, Ollama, OpenAI, Amazon Q, MCP, n8n</p>
+              </div>
+              <div class="skill-group">
+                <h3>cloud / data</h3>
+                <p>AWS, Lambda, Docker, CI/CD, MongoDB, Pinecone, ChromaDB</p>
+              </div>
+            </div>
+          </section>
+
+          <section aria-labelledby="education-heading">
+            <h2 id="education-heading">education</h2>
+            <div class="education-list">
+              <article>
+                <time>2019—2020</time>
+                <h3>BSc Computer Science &amp; Software Engineering</h3>
+                <p>University of Bedfordshire<br>First Class Honours</p>
+              </article>
+              <article>
+                <time>2016—2019</time>
+                <h3>Higher Diploma in Information Technology</h3>
+                <p>SLIIT, Sri Lanka</p>
+              </article>
+            </div>
+          </section>
+
+          <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">contact</h2>
+            <address class="contact-list">
+              <a href="mailto:salitha.wijerathna@gmail.com">salitha.wijerathna@gmail.com</a>
+              <a href="tel:+94711883899">+94 71 188 3899</a>
+              <span>Kurunegala, Sri Lanka</span>
+              <a href="https://www.linkedin.com/in/kaweendra/" target="_blank" rel="noreferrer">linkedin.com/in/kaweendra ↗</a>
+            </address>
+          </section>
+        </aside>
+
+        <section class="experience-column" id="experience" aria-labelledby="experience-heading">
+          <div class="section-heading">
+            <h2 id="experience-heading">experience</h2>
+            <span>01—05</span>
+          </div>
+
+          <article class="job job-featured">
+            <div class="job-meta">
+              <time>Nov 2023—Present</time>
+              <span>Colombo / Remote</span>
+            </div>
+            <h3>Senior Software Engineer</h3>
+            <p class="company">XigeniX · Full-Stack Blockchain</p>
+            <p>Building enterprise blockchain and AI products with AWS, CDK, Lambda, Solidity, Ethers.js and Node.js.</p>
+            <ul class="impact-list">
+              <li>Built multi-model AI and RAG systems with OpenAI, Ollama, Pinecone and ChromaDB.</li>
+              <li>Engineered Amazon Q Business tools with Lambda integrations and evaluation workflows.</li>
+              <li>Delivered MyCarbon on Arbitrum with custom contracts and hardened wallet security.</li>
+              <li>Introduced company-wide automated code quality and security analysis with SonarQube.</li>
+            </ul>
+          </article>
+
+          <article class="job">
+            <div class="job-meta">
+              <time>Jun 2021—Nov 2023</time>
+              <span>Full-time</span>
+            </div>
+            <h3>Software Engineer</h3>
+            <p class="company">Block-Stars Pvt Ltd</p>
+            <p>Developed MERN and Web3 products using Web3.js and Solidity, while contributing to project management and QA.</p>
+            <ul class="impact-list">
+              <li>Shipped NFT marketplaces using ERC-721 and ERC-1155 standards.</li>
+              <li>Created ERC-20 tooling and re-engineered a MetaMask-based Polygon wallet.</li>
+              <li>Built middleware and market-data automation for a Korean equities trading platform.</li>
+            </ul>
+          </article>
+
+          <article class="job">
+            <div class="job-meta">
+              <time>2020—2022</time>
+              <span>Independent</span>
+            </div>
+            <h3>Freelance Software Engineer</h3>
+            <p class="company">Local &amp; international clients</p>
+            <p>Delivered web, mobile, Web3 and machine-learning solutions across MERN, PHP, Python, Go and Java.</p>
+          </article>
+        </section>
+      </div>
+
+      <footer class="page-footer">
+        <span>salithakaweendra.github.io</span>
+        <span>01 / 02</span>
+      </footer>
+    </article>
+
+    <article class="paper paper-work" id="projects">
+      <div class="tape tape-right" aria-hidden="true"></div>
+      <div class="wash wash-work" aria-hidden="true"></div>
+
+      <header class="work-header">
+        <div>
+          <p class="eyebrow">Selected work / experience</p>
+          <h2>projects &amp;<br>earlier work</h2>
+        </div>
+        <p>Practical systems across AI, blockchain, cloud platforms and product engineering.</p>
+      </header>
+
+      <section class="project-section" aria-labelledby="projects-heading">
+        <div class="section-heading">
+          <h2 id="projects-heading">selected projects</h2>
+          <span>2019—Now</span>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:salitha.wijerathna@gmail.com" class="contact-link">salitha.wijerathna@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+94711883899" class="contact-link">+94 711883899</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">April 25, 1995</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Kurunegala, Sri Lanka</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/kaweendra/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <!-- <li class="navbar-item">
-            <button class="navbar-link  " data-nav-link>About</button>
-          </li> -->
-
-          <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link>Resume</button>
-          </li>
-
-
-          <!-- <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li> -->
-
-          <!-- <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li> -->
-          <li class="navbar-item">
-            <a href="/assets/cv/CV-SalithaWijerathna-2026-03.pdf">
-              <button class="navbar-link">
-                <span class="download-icon">&#x2B07;</span> Download CV
-              </button>
-            </a>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  " data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I'm a Software Engineer from Sri Lanka, specializing in Software Development, Web Development, AI/ML and
-            Blockchain Development. I have a particular interest in NFT platforms and tokenization. I find solutions to
-            complex problems and user requirements in the form of web applications, software, and decentralized
-            applications. With over four years of experience in software and web application development, and a growing
-            expertise in blockchain technology, I am ready to use my skills to meet the needs of your organization.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="/assets/images/icons8-software-64.png" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Software Development</h4>
-
-                <p class="service-item-text">
-                  Professional development of cross-platform desktop applications in Java.
-                </p>
-              </div>
-
-            </li>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites in JavaScript frameworks.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="/assets/images/icons8-ethereum-50.png" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web3 & Blockchain</h4>
-
-                <p class="service-item-text">
-                  Professional development of NFT Platforms, Ether based Projects and Smart Contracts.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icons8-ai-80.png" alt="ai icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">AI Development</h4>
-
-                <p class="service-item-text">
-                  Development of intelligent AI agents, MCP implementations, and custom AI solutions for enterprise
-                  applications.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <h3 class="h3 testimonials-title">Testimonials</h3>
-
-        <ul class="testimonials-list has-scrollbar">
-
-          <li class="testimonials-item">
-            <div class="content-card" data-testimonials-item>
-
-              <figure class="testimonials-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-              </figure>
-
-              <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-              <div class="testimonials-text" data-testimonials-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-          </li>
-
-          <li class="testimonials-item">
-            <div class="content-card" data-testimonials-item>
-
-              <figure class="testimonials-avatar-box">
-                <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-              </figure>
-
-              <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-              <div class="testimonials-text" data-testimonials-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-          </li>
-
-          <li class="testimonials-item">
-            <div class="content-card" data-testimonials-item>
-
-              <figure class="testimonials-avatar-box">
-                <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-              </figure>
-
-              <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-              <div class="testimonials-text" data-testimonials-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-          </li>
-
-          <li class="testimonials-item">
-            <div class="content-card" data-testimonials-item>
-
-              <figure class="testimonials-avatar-box">
-                <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-              </figure>
-
-              <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-              <div class="testimonials-text" data-testimonials-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-          </li>
-
-        </ul>
-
-        </section> -->
-
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume active" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University of Bedfordshire, (SLIIT Academy)</h4>
-
-              <span>2019 — 2020</span>
-
-              <p class="timeline-text">
-                Bachelor of Science in Computer Science and Software Engineering </br> First Class Honours
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Sri Lanka Institute Of Information Technology (SLIIT), Sri Lanka</h4>
-
-              <span>2016 — 2019</span>
-
-              <p class="timeline-text">
-                Higher Diploma in Information Technology
-              </p>
-
-            </li>
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="briefcase-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Senior Software Engineer(Full-Stack Blockchain)</h4>
-              <a href="https://xigenix.com/" class="new-hyperlinks">XigeniX</a>
-              <span>2023(November) — Present</span>
-
-              <p class="timeline-text">
-                Full-Stack Software Engineer specializing in Blockchain development with AWS, CDK, Lambda, Solidity,
-                Ether.js, Node.js.<br><br>
-                <strong>Notable Projects:</strong><br>
-
-                <span class="bullet-point">
-                  <span class="project-title">• AI Solutions:</span><br>
-                  <span class="project-description">Developed multi-model Natural Language Food Ordering system using
-                    Ollama, Google AI, OpenAI. Built RAG application with vector embeddings using Pinecone, ChromaDB,
-                    Ollama with chat functionality and REST API Design. Created N8N-OpenAI chat workflow with context
-                    management for proof-of-concept demos.</span>
-                </span>
-
-                <span class="bullet-point">
-                  <span class="project-title">• SKY AI:</span><br>
-                  <span class="project-description">Engineered enterprise AI solution using Amazon Q Business,
-                    implementing advanced prompt fine-tuning strategies and meta prompting techniques. Developed custom
-                    tools calling functionality with AWS Lambda integration for enhanced AI capabilities. Conducted
-                    ground truth evaluation and relevancy tuning to optimize AI response accuracy and business value
-                    alignment.</span>
-                </span>
-
-                <span class="bullet-point">
-                  <span class="project-title">• MCP Integration:</span><br>
-                  <span class="project-description">Developed and implemented an MCP with Claude desktop app to give
-                    access to in-house services.</span>
-                </span>
-
-                <span class="bullet-point">
-                  <span class="project-title">• MyCarbon Platform:</span><br>
-                  <span class="project-description">Developed full-stack carbon footprint platform with frontend,
-                    backend, blockchain integration and custom smart contracts; integrated Lokblok Toughbox wallet
-                    security deployed on L2 EVM, Arbitrum.</span>
-                </span>
-
-                <span class="bullet-point">
-                  <span class="project-title">• Code Quality Initiative:</span><br>
-                  <span class="project-description">Deployed and spearheaded company-wide SonarQube for automated code
-                    quality and security analysis.</span>
-                </span>
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Software Engineer</h4>
-              <a href="https://blockstarsglobal.com/" class="new-hyperlinks">Block-Stars Pvt Ltd</a>
-              <span>2021(June) — 2023(November)</span>
-
-              <p class="timeline-text">
-                Working in MERN Stack to develop web applications and use WEB3.js and Solidity to develop web3 projects.
-                I have also contributed to projects in the capacity of Project Manager and QA as needed.<br><br>
-                <strong>Notable Projects:</strong><br>
-
-                <span class="bullet-point">
-                  <span class="project-title">• K-Culture & NFT Real Estate:</span><br>
-                  <span class="project-description">Recently I have worked on 2 projects called "K-Culture" and "NFT
-                    Real Estate" which are decentralized NFT market places. I worked on the contracts to bring them up
-                    to erc721 and erc1155 standards and also worked minting functions to bring the NFTs to
-                    OpenSea.</span>
-                </span>
-
-                <span class="bullet-point">
-                  <span class="project-title">• Fauna NFT:</span><br>
-                  <span class="project-description">This is a NFT marketplace where users can mint their NFTs and sell
-                    them. I worked on the front end, the back end and on the smart contracts of the project.</span>
-                </span>
-
-                <span class="bullet-point">
-                  <span class="project-title">• Token Generator:</span><br>
-                  <span class="project-description">This is a web3 project which is used to generate ERC20 tokens with
-                    contracts. I worked on the front end and in creating ERC20 contracts.</span>
-                </span>
-
-                <span class="bullet-point">
-                  <span class="project-title">• StarApple (Metamask Rebranding):</span><br>
-                  <span class="project-description">In this project I was responsible for rebranding the Metamask
-                    extension to StarApple and changing the default token to polygon with a custom token already added
-                    on the top of it.</span>
-                </span>
-
-                <span class="bullet-point">
-                  <span class="project-title">• Future-Trading Platform:</span><br>
-                  <span class="project-description">This is a trading platform focused on KOSPI & KOSDAQ. I worked on
-                    the middle server where it manage the connection between our platform and Korean Service provider
-                    Ebest. There was another component where it consist of a CRON job that collect daily stock data from
-                    KRX and store it in our database.</span>
-                </span>
-              </p>
-
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Freelance Software Engineer</h4>
-              <a href="#" class="new-hyperlinks">Freelance</a>
-              <span>2020 — 2022</span>
-              <p class="timeline-text">
-                I freelanced as a Software Engineer, tailoring solutions for diverse clients, from small businesses to
-                individuals, both local and foreign. I mastered multiple tech stacks, including MERN, PHP,
-                Python, and GO, ensuring adaptability. I also explored emerging domains like Web3 and Machine Learning,
-                staying innovative for cutting-edge client solutions.<br><br>
-                <strong>Few Notable Projects:</strong><br>
-
-                <span class="bullet-point">
-                  <span class="project-title">• DIG - NFT:</span><br>
-                  <span class="project-description">"DIG - NFT," a decentralized NFT marketplace. The specialty of this
-                    project was its use of a ledger-based blockchain instead of an EVM blockchain. We utilized XRPL to
-                    mint the NFTs and bring them to the marketplace. It was entirely different from EVM, as XRP does not
-                    have smart contracts.</span>
-                </span>
-
-                <span class="bullet-point">
-                  <span class="project-title">• MathBuddy:</span><br>
-                  <span class="project-description">"MathBuddy", a Mobile application focused on improving the
-                    mathematics skills of O/L Students. I worked on the backend of the project. Backend was developed
-                    using NodeJS, ExpressJS and MongoDB, MongoDB Atlas and Github for version control.</span>
-                </span>
-
-                <span class="bullet-point">
-                  <span class="project-title">• Math Game:</span><br>
-                  <span class="project-description">Fun and educational Math game developed for an international client.
-                    The game was developed Using Java SE version and Netbeans IDE. MySQL was used as the
-                    database.</span>
-                </span>
-
-                <span class="bullet-point">
-                  <span class="project-title">• Cloth Predictor:</span><br>
-                  <span class="project-description">A Machine Learning project was developed to predict the type of
-                    clothing based on weather, occasion, time of day, gender, and color. The project was implemented
-                    using Python, with Scikit-learn and Pandas utilized to train the model, and FAST API employed to
-                    create the REST API.</span>
-                </span>
-
-                <span class="bullet-point">
-                  <span class="project-title">• R&D Projects:</span><br>
-                  <span class="project-description">I have worked on multiple R&D projects to explore new technologies
-                    and to bring them to the market. I have worked on projects with technologies like cockroachDB,
-                    MongoDB Realm, AWS, Docker and many more.</span>
-                </span>
-              </p>
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web Developer/Assisstant Manager</h4>
-              <a href="#" class="new-hyperlinks">Sanjayalali Agents - Foreign Employment Agency</a>
-              <span>2020(December) — 2021(December)</span>
-
-              <p class="timeline-text">
-                Worked as a web developer. The main task was to develop a web site and manage the social media accounts
-                to bring the organization to masses.
-                I also worked as an assistant manager to manage the day to day operations of the organization and
-                employees.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Intern(Software Engineer)</h4>
-              <a href="https://www.slpa.lk/" class="new-hyperlinks">Sri Lanka Ports Authority, Colombo 01</a>
-              <span>2020(February) — 2020(August)</span>
-
-              <p class="timeline-text">
-                Worked as a software engineer intern in Information system department. The main task was to develop a
-                web application for the house hospital to manage
-                the patients, mediacal records, medical history and medical staff.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <style>
-          .grid-item {
-            border: 1px solid #ffbb5c;
-            /* Adjust color as needed */
-            color: var(--orange-yellow-crayola);
-            border-radius: 10px;
-            /* Adjust as needed */
-            padding: 10px;
-            /* Adjust as needed */
-            margin: 5px;
-            /* Adjust as needed */
-            display: inline-block;
-          }
-
-          /* Enhanced bullet point styling */
-          .timeline-text {
-            line-height: 1.8 !important;
-          }
-
-          .timeline-text .bullet-point {
-            display: block;
-            margin: 12px 0;
-            padding-left: 0;
-            position: relative;
-          }
-
-          .timeline-text .bullet-point:first-of-type {
-            margin-top: 8px;
-          }
-
-          .timeline-text .project-title {
-            font-weight: 600;
-            color: var(--orange-yellow-crayola);
-            font-size: 0.95em;
-          }
-
-          .timeline-text .project-description {
-            font-weight: 400;
-            color: var(--light-gray-70);
-            margin-top: 4px;
-            line-height: 1.6;
-          }
-        </style>
-
-        <section class="skill timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="flash-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Skills</h3>
-          </div>
-          <div class="grid">
-            <div class="grid-item">JavaScript</div>
-            <div class="grid-item">TypeScript</div>
-            <div class="grid-item">Node.JS</div>
-            <div class="grid-item">Express.JS</div>
-            <div class="grid-item">Web3.JS</div>
-            <div class="grid-item">Python</div>
-            <div class="grid-item">FastAPI</div>
-            <div class="grid-item">REST</div>
-            <div class="grid-item">PHP</div>
-            <div class="grid-item">Wallet Security</div>
-            <div class="grid-item">LLM</div>
-            <div class="grid-item">N8N</div>
-            <div class="grid-item">AWS</div>
-            <div class="grid-item">Nginx</div>
-            <div class="grid-item">Solidity</div>
-            <div class="grid-item">Smart Contracts</div>
-            <div class="grid-item">EVM</div>
-            <div class="grid-item">L2</div>
-            <div class="grid-item">DeFi</div>
-            <div class="grid-item">Ethereum</div>
-            <div class="grid-item">Ollama</div>
-            <div class="grid-item">OpenAI</div>
-            <div class="grid-item">Google AI</div>
-            <div class="grid-item">NLP</div>
-            <div class="grid-item">LangChain</div>
-            <div class="grid-item">RAG</div>
-            <div class="grid-item">Model Training</div>
-            <div class="grid-item">MCP</div>
-            <div class="grid-item">Amazon Q Business</div>
-            <div class="grid-item">Prompt Fine-Tuning</div>
-            <div class="grid-item">Meta Prompting</div>
-            <div class="grid-item">Tools Calling</div>
-            <div class="grid-item">Ground Truth Evaluation</div>
-            <div class="grid-item">Relevancy Tuning</div>
-            <div class="grid-item">Docker</div>
-            <div class="grid-item">CI/CD</div>
-            <div class="grid-item">SQL</div>
-            <div class="grid-item">MongoDB</div>
-            <div class="grid-item">ChromaDB</div>
-            <div class="grid-item">Pinecone</div>
-            <div class="grid-item">DynamoDB</div>
-            <div class="grid-item">EC2</div>
-            <div class="grid-item">S3</div>
-            <div class="grid-item">Route 53</div>
-            <div class="grid-item">AWS Lambda</div>
-          </div>
-        </section></br>
-        <section class="skill timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="person-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Soft Skills</h3>
-          </div>
-          <div class="grid">
-            <div class="grid-item">Communication</div>
-            <div class="grid-item">Teamwork</div>
-            <div class="grid-item">Problem-solving</div>
-            <div class="grid-item">Leadership</div>
-            <div class="grid-item">Adaptability</div>
-            <div class="grid-item">Work Ethic</div>
-            <div class="grid-item">Time Management</div>
-            <div class="grid-item">Creativity</div>
-            <div class="grid-item">Critical Thinking</div>
-            <div class="grid-item">Conflict Resolution</div>
-            <div class="grid-item">Decision Making</div>
-          </div>
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
+        <div class="project-list">
+          <article class="project">
+            <button class="project-toggle" type="button" aria-expanded="true">
+              <span class="project-number">01</span>
+              <span>
+                <strong>AI Solutions &amp; SKY AI</strong>
+                <small>AI / RAG / Enterprise</small>
+              </span>
+              <span class="toggle-mark" aria-hidden="true"></span>
             </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a
-                href="https://medium.com/block-magnates/deploying-and-interacting-with-erc20-token-contracts-remix-ide-a-step-by-step-guide-19fdf75bbd60">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Deploying and Interacting with ERC20" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">BlockChain</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 15, 2024</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Deploying and Interacting with ERC20 </h3>
-
-                  <p class="blog-text">
-                    Deploying and Interacting with ERC20 Token Contracts (Remix IDE): A Step-by-Step Guide
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="https://medium.com/@kaweendra/the-ultimate-sorting-algorithm-6513d6968420">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="The Ultimate Sorting Algorithm" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Computer Science</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Jan 22, 2024</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The Ultimate Sorting Algorithm</h3>
-
-                  <p class="blog-text">
-                    Greetings, comrades ! Today, we’ll take a look at sorting algorithms, ....
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <!-- <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li> -->
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63293.77266827955!2d80.35778040000001!3d7.480620350000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3398ab06be8b9%3A0x1f90e4e71e885052!2sKurunegala!5e0!3m2!1sen!2slk!4v1663060579425!5m2!1sen!2slk"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="mailto:salitha.wijerathna@gmail.com.com" method="POST" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            <div class="project-details">
+              <p>Multi-model natural-language ordering, retrieval-augmented chat and enterprise Amazon Q Business tools. Built with OpenAI, Ollama, Google AI, Pinecone, ChromaDB, n8n and AWS Lambda.</p>
+              <ul class="tag-list"><li>LLM</li><li>RAG</li><li>AWS</li><li>Vector DB</li></ul>
             </div>
+          </article>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
+          <article class="project">
+            <button class="project-toggle" type="button" aria-expanded="false">
+              <span class="project-number">02</span>
+              <span>
+                <strong>MyCarbon Platform</strong>
+                <small>Climate / Blockchain / Full-stack</small>
+              </span>
+              <span class="toggle-mark" aria-hidden="true"></span>
             </button>
+            <div class="project-details" hidden>
+              <p>A full-stack carbon-footprint platform with custom smart contracts, Lokblok Toughbox wallet security and an L2 deployment on Arbitrum.</p>
+              <ul class="tag-list"><li>Solidity</li><li>Arbitrum</li><li>Node.js</li><li>Wallet Security</li></ul>
+            </div>
+          </article>
 
-          </form>
+          <article class="project">
+            <button class="project-toggle" type="button" aria-expanded="false">
+              <span class="project-number">03</span>
+              <span>
+                <strong>NFT Marketplaces</strong>
+                <small>Web3 / Smart contracts</small>
+              </span>
+              <span class="toggle-mark" aria-hidden="true"></span>
+            </button>
+            <div class="project-details" hidden>
+              <p>Delivered K-Culture, NFT Real Estate, Fauna NFT and DIG-NFT. Work spans ERC-721/1155 contracts, OpenSea-compatible minting, full-stack marketplace features and XRP Ledger NFTs.</p>
+              <ul class="tag-list"><li>ERC-721</li><li>ERC-1155</li><li>XRPL</li><li>Web3.js</li></ul>
+            </div>
+          </article>
 
-        </section>
+          <article class="project">
+            <button class="project-toggle" type="button" aria-expanded="false">
+              <span class="project-number">04</span>
+              <span>
+                <strong>Trading Platform</strong>
+                <small>Fintech / Integration / Data</small>
+              </span>
+              <span class="toggle-mark" aria-hidden="true"></span>
+            </button>
+            <div class="project-details" hidden>
+              <p>Middleware connecting a KOSPI and KOSDAQ trading platform to Ebest, plus a scheduled pipeline collecting daily KRX stock data.</p>
+              <ul class="tag-list"><li>Node.js</li><li>APIs</li><li>CRON</li><li>Market Data</li></ul>
+            </div>
+          </article>
 
-      </article>
+          <article class="project">
+            <button class="project-toggle" type="button" aria-expanded="false">
+              <span class="project-number">05</span>
+              <span>
+                <strong>Cloth Predictor</strong>
+                <small>Machine learning / API</small>
+              </span>
+              <span class="toggle-mark" aria-hidden="true"></span>
+            </button>
+            <div class="project-details" hidden>
+              <p>A machine-learning service predicting clothing choices from weather, occasion, time, gender and colour, exposed through a FastAPI REST service.</p>
+              <ul class="tag-list"><li>Python</li><li>Scikit-learn</li><li>Pandas</li><li>FastAPI</li></ul>
+            </div>
+          </article>
 
-    </div>
+          <article class="project">
+            <button class="project-toggle" type="button" aria-expanded="false">
+              <span class="project-number">06</span>
+              <span>
+                <strong>MathBuddy</strong>
+                <small>Education / Mobile backend</small>
+              </span>
+              <span class="toggle-mark" aria-hidden="true"></span>
+            </button>
+            <div class="project-details" hidden>
+              <p>A backend for a mobile application designed to improve mathematics skills for Sri Lankan O/L students.</p>
+              <ul class="tag-list"><li>Node.js</li><li>Express</li><li>MongoDB</li><li>Atlas</li></ul>
+            </div>
+          </article>
+        </div>
+      </section>
 
+      <section class="earlier-experience" aria-labelledby="earlier-heading">
+        <div class="section-heading">
+          <h2 id="earlier-heading">earlier experience</h2>
+          <span>2020—2021</span>
+        </div>
+        <article class="compact-job">
+          <time>Dec 2020—Dec 2021</time>
+          <div>
+            <h3>Web Developer / Assistant Manager</h3>
+            <p class="company">Sanjayalali Agents</p>
+            <p>Developed the company website, led social-media outreach and supported daily operations and employee management.</p>
+          </div>
+        </article>
+        <article class="compact-job">
+          <time>Feb—Aug 2020</time>
+          <div>
+            <h3>Software Engineer Intern</h3>
+            <p class="company">Sri Lanka Ports Authority</p>
+            <p>Built a hospital-management application for patients, medical records, history and staff in the Information Systems Department.</p>
+          </div>
+        </article>
+      </section>
+
+      <blockquote>
+        <p>“Curious about difficult problems.<br>Serious about useful outcomes.”</p>
+      </blockquote>
+
+      <footer class="page-footer">
+        <span>Available for meaningful engineering work</span>
+        <span>02 / 02</span>
+      </footer>
+    </article>
   </main>
 
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+  <footer class="mobile-footer">
+    <p>Salitha Kaweendra · Software Engineer</p>
+    <button type="button" data-print>Print this résumé</button>
+  </footer>
 </body>
-
 </html>
