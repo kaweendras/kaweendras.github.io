@@ -192,11 +192,14 @@ button {
 }
 
 .wash-profile {
-  top: -40px;
-  right: -60px;
-  width: 430px;
-  height: 330px;
-  background: linear-gradient(135deg, var(--pink), var(--blue));
+  top: -34px;
+  right: -48px;
+  width: 440px;
+  height: 340px;
+  background:
+    radial-gradient(circle at 28% 34%, rgba(242, 145, 164, 0.48), transparent 53%),
+    radial-gradient(circle at 73% 67%, rgba(130, 184, 229, 0.42), transparent 57%);
+  filter: blur(42px);
 }
 
 .wash-work {
