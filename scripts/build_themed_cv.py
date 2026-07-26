@@ -88,10 +88,7 @@ def link(c, text, url, x, y, size=7):
 
 
 def bullet(c, text, x, y, width):
-    c.setFillColor(MUTED)
-    c.setFont("Helvetica", 8)
-    c.drawString(x, y, "-")
-    return text_block(c, text, x + 8, y, width - 8, size=8, leading=11.2)
+    return text_block(c, f"- {text}", x, y, width, size=8, leading=11.2)
 
 
 def job(c, y, dates, location, title, company, company_url, intro, bullets):
@@ -168,7 +165,7 @@ def build():
     c.setFillColor(INK)
     c.setFont("Helvetica-Bold", 30)
     c.drawString(MARGIN, top - 31, "salitha")
-    c.drawString(MARGIN, top - 61, "kaweendra")
+    c.drawString(MARGIN, top - 61, "wijerathna")
     c.setFont("Helvetica-Bold", 8.4)
     c.drawString(MARGIN, top - 82, "software engineer / blockchain / ai / backend")
 
@@ -188,7 +185,7 @@ def build():
     content_top = divider_y - 25
 
     # Left sidebar: ATS-readable skills, education, and contact.
-    y = heading(c, "skills", MARGIN, content_top, LEFT_W, 14)
+    y = heading(c, "technical skills", MARGIN, content_top, LEFT_W, 14)
     skill_groups = [
         ("backend / web", "JavaScript, TypeScript, Node.js, Express.js, Python, FastAPI, REST, PHP"),
         ("blockchain", "Solidity, Web3.js, Ethers.js, Smart Contracts, Ethereum, EVM, L2, DeFi, Wallet Security"),
@@ -252,7 +249,7 @@ def build():
     y = job(
         c,
         y,
-        "Nov 2023-Present",
+        "November 2023 - Present",
         "Sydney / Colombo",
         "Senior Software Engineer",
         "XigeniX / Full-Stack Blockchain",
@@ -270,7 +267,7 @@ def build():
     y = job(
         c,
         y,
-        "Jun 2021-Nov 2023",
+        "June 2021 - November 2023",
         "Seoul / Remote",
         "Software Engineer",
         "Block-Stars Pvt Ltd",
@@ -287,7 +284,7 @@ def build():
     y = job(
         c,
         y,
-        "Jan 2020-Apr 2022",
+        "January 2020 - April 2022",
         "Independent / Remote",
         "Freelance Software Engineer",
         "iSotek / Upwork",
@@ -305,7 +302,7 @@ def build():
     c.line(MARGIN, footer_y + 7, W - MARGIN, footer_y + 7)
     c.setFillColor(MUTED)
     c.setFont("Helvetica", 5.5)
-    c.drawString(MARGIN, footer_y, "SALITHA KAWEENDRA / SOFTWARE ENGINEER")
+    c.drawString(MARGIN, footer_y, "SALITHA WIJERATHNA / SOFTWARE ENGINEER")
     c.drawRightString(W - MARGIN, footer_y, "01 / 01")
 
     c.showPage()
