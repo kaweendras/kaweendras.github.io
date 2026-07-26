@@ -72,11 +72,11 @@ def label(c, text, x, y, size=7.5):
 
 def small(c, text, x, y, color=MUTED):
     c.setFillColor(color)
-    c.setFont("Helvetica", 6.2)
+    c.setFont("Helvetica", 6.8)
     c.drawString(x, y, text)
 
 
-def link(c, text, url, x, y, size=6.5):
+def link(c, text, url, x, y, size=7):
     c.setFillColor(INK)
     c.setFont("Helvetica", size)
     c.drawString(x, y, text)
@@ -89,38 +89,38 @@ def link(c, text, url, x, y, size=6.5):
 
 def bullet(c, text, x, y, width):
     c.setFillColor(MUTED)
-    c.setFont("Helvetica", 7)
+    c.setFont("Helvetica", 8)
     c.drawString(x, y, "-")
-    return text_block(c, text, x + 8, y, width - 8, size=7, leading=9.5)
+    return text_block(c, text, x + 8, y, width - 8, size=8, leading=11.2)
 
 
 def job(c, y, dates, location, title, company, company_url, intro, bullets):
     small(c, dates, RIGHT_X, y)
-    location_width = stringWidth(location, "Helvetica", 6.2)
+    location_width = stringWidth(location, "Helvetica", 6.8)
     small(c, location, RIGHT_X + RIGHT_W - location_width, y)
     y -= 16
 
     c.setFillColor(INK)
-    c.setFont("Helvetica-Bold", 10.2)
+    c.setFont("Helvetica-Bold", 11.2)
     c.drawString(RIGHT_X, y, title)
     y -= 11
 
-    c.setFont("Helvetica-Bold", 6.8)
+    c.setFont("Helvetica-Bold", 7.3)
     c.drawString(RIGHT_X, y, company)
-    company_width = stringWidth(company, "Helvetica-Bold", 6.8)
+    company_width = stringWidth(company, "Helvetica-Bold", 7.3)
     c.linkURL(company_url, (RIGHT_X, y - 2, RIGHT_X + company_width, y + 8), relative=0)
     y -= 14
 
-    y = text_block(c, intro, RIGHT_X, y, RIGHT_W, size=7, leading=9.5)
-    y -= 4
+    y = text_block(c, intro, RIGHT_X, y, RIGHT_W, size=8, leading=11.2)
+    y -= 5
     for item in bullets:
         y = bullet(c, item, RIGHT_X, y, RIGHT_W)
-        y -= 2
+        y -= 3
 
     c.setStrokeColor(LINE)
     c.setLineWidth(0.45)
     c.line(RIGHT_X, y - 3, RIGHT_X + RIGHT_W, y - 3)
-    return y - 20
+    return y - 28
 
 
 def build():
@@ -138,13 +138,26 @@ def build():
     c.setFillColor(PAPER)
     c.rect(0, 0, W, H, fill=1, stroke=0)
 
-    # Subtle vector colour treatment. No raster images are embedded.
+    # Blended vector colour washes. Radial PDF shadings keep this image-free.
     c.saveState()
-    c.setFillAlpha(0.09)
-    c.setFillColor(PINK)
-    c.circle(W - 16 * mm, H - 16 * mm, 34 * mm, fill=1, stroke=0)
-    c.setFillColor(BLUE)
-    c.circle(W - 3 * mm, H - 36 * mm, 29 * mm, fill=1, stroke=0)
+    c.setFillAlpha(0.42)
+    c.radialGradient(
+        W - 25 * mm,
+        H - 15 * mm,
+        47 * mm,
+        [PINK, PAPER],
+        positions=[0, 1],
+        extend=False,
+    )
+    c.setFillAlpha(0.36)
+    c.radialGradient(
+        W - 2 * mm,
+        H - 37 * mm,
+        44 * mm,
+        [BLUE, PAPER],
+        positions=[0, 1],
+        extend=False,
+    )
     c.restoreState()
 
     top = H - 18 * mm
@@ -185,8 +198,8 @@ def build():
     for title, body in skill_groups:
         label(c, title, MARGIN, y)
         y -= 11
-        y = text_block(c, body, MARGIN, y, LEFT_W, size=6.6, leading=9, color=MUTED)
-        y -= 10
+        y = text_block(c, body, MARGIN, y, LEFT_W, size=7, leading=9.8, color=MUTED)
+        y -= 12
 
     y = heading(c, "education", MARGIN, y - 2, LEFT_W, 14)
     small(c, "2019-2020", MARGIN, y)
@@ -198,13 +211,13 @@ def build():
         y,
         LEFT_W,
         font="Helvetica-Bold",
-        size=7.2,
-        leading=9.5,
+        size=7.7,
+        leading=10.2,
     )
     y -= 2
-    y = text_block(c, "University of Bedfordshire", MARGIN, y, LEFT_W, size=6.5, leading=8.5, color=MUTED)
-    y = text_block(c, "First Class Honours", MARGIN, y, LEFT_W, size=6.5, leading=8.5, color=MUTED)
-    y -= 11
+    y = text_block(c, "University of Bedfordshire", MARGIN, y, LEFT_W, size=7, leading=9.2, color=MUTED)
+    y = text_block(c, "First Class Honours", MARGIN, y, LEFT_W, size=7, leading=9.2, color=MUTED)
+    y -= 13
 
     small(c, "2016-2019", MARGIN, y)
     y -= 13
@@ -215,18 +228,18 @@ def build():
         y,
         LEFT_W,
         font="Helvetica-Bold",
-        size=7.2,
-        leading=9.5,
+        size=7.7,
+        leading=10.2,
     )
     y -= 2
-    y = text_block(c, "SLIIT, Sri Lanka", MARGIN, y, LEFT_W, size=6.5, leading=8.5, color=MUTED)
+    y = text_block(c, "SLIIT, Sri Lanka", MARGIN, y, LEFT_W, size=7, leading=9.2, color=MUTED)
 
     y = heading(c, "contact", MARGIN, y - 13, LEFT_W, 14)
     link(c, "salitha.wijerathna@gmail.com", "mailto:salitha.wijerathna@gmail.com", MARGIN, y)
     y -= 13
     link(c, "+94 71 188 3899", "tel:+94711883899", MARGIN, y)
     y -= 13
-    text_block(c, "Kurunegala, Sri Lanka", MARGIN, y, LEFT_W, size=6.5, leading=9)
+    text_block(c, "Kurunegala, Sri Lanka", MARGIN, y, LEFT_W, size=7, leading=9.5)
     y -= 13
     link(c, "kaweendra.is-a.dev", "https://kaweendra.is-a.dev", MARGIN, y)
     y -= 13
