@@ -88,10 +88,24 @@ def link(c, text, url, x, y, size=7):
 
 
 def bullet(c, text, x, y, width):
-    return text_block(c, f"- {text}", x, y, width, size=8, leading=11.2)
+    size = 8
+    leading = 11.2
+    hanging_indent = 8
+    lines = wrap(text, "Helvetica", size, width - hanging_indent)
+
+    c.setFillColor(INK)
+    c.setFont("Helvetica", size)
+    c.drawString(x, y, f"- {lines[0]}")
+    y -= leading
+
+    for line in lines[1:]:
+        c.drawString(x + hanging_indent, y, line)
+        y -= leading
+
+    return y
 
 
-def job(c, y, dates, location, title, company, company_url, intro, bullets):
+def job(c, y, dates, location, title, company, company_url, intro, bullets, draw_rule=True):
     small(c, dates, RIGHT_X, y)
     location_width = stringWidth(location, "Helvetica", 6.8)
     small(c, location, RIGHT_X + RIGHT_W - location_width, y)
@@ -114,9 +128,10 @@ def job(c, y, dates, location, title, company, company_url, intro, bullets):
         y = bullet(c, item, RIGHT_X, y, RIGHT_W)
         y -= 3
 
-    c.setStrokeColor(LINE)
-    c.setLineWidth(0.45)
-    c.line(RIGHT_X, y - 3, RIGHT_X + RIGHT_W, y - 3)
+    if draw_rule:
+        c.setStrokeColor(LINE)
+        c.setLineWidth(0.45)
+        c.line(RIGHT_X, y - 3, RIGHT_X + RIGHT_W, y - 3)
     return y - 25
 
 
@@ -297,6 +312,7 @@ def build():
             "Cloth Predictor: Built a Scikit-learn model exposed through FastAPI.",
             "Math Game: Developed an educational Java and MySQL application.",
         ],
+        draw_rule=False,
     )
 
     # Footer.
