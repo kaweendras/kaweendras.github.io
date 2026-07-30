@@ -25,7 +25,7 @@ document.querySelectorAll('[data-print]').forEach((button) => {
       return;
     }
 
-    const printWindow = window.open('', '_blank');
+    const printWindow = window.open(cvDownloadLink.href, '_blank');
 
     if (!printWindow) {
       window.location.assign(cvDownloadLink.href);
@@ -38,7 +38,5 @@ document.querySelectorAll('[data-print]').forEach((button) => {
         printWindow.print();
       }, 500);
     }, { once: true });
-
-    printWindow.location.href = cvDownloadLink.href;
   });
 });
