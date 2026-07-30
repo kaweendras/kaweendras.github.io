@@ -16,6 +16,27 @@ projectToggles.forEach((toggle) => {
   });
 });
 
+const cvDownloadLink = document.querySelector('.download-button');
+
 document.querySelectorAll('[data-print]').forEach((button) => {
-  button.addEventListener('click', () => window.print());
+  button.addEventListener('click', () => {
+    if (!cvDownloadLink) {
+      window.print();
+      return;
+    }
+
+    const printWindow = window.open(cvDownloadLink.href, '_blank');
+
+    if (!printWindow) {
+      window.location.assign(cvDownloadLink.href);
+      return;
+    }
+
+    printWindow.addEventListener('load', () => {
+      window.setTimeout(() => {
+        printWindow.focus();
+        printWindow.print();
+      }, 500);
+    }, { once: true });
+  });
 });
