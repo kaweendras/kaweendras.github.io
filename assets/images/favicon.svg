@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="site-gradient" x1="8" y1="6" x2="57" y2="59" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#efa0b0"/>
+      <stop offset="0.52" stop-color="#d9b7cf"/>
+      <stop offset="1" stop-color="#9ac4e7"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="#f7f5f1"/>
+  <rect x="3" y="3" width="58" height="58" rx="13" fill="url(#site-gradient)"/>
+  <text
+    x="32"
+    y="45"
+    fill="#171719"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="38"
+    font-weight="700"
+    text-anchor="middle"
+  >S</text>
+</svg>
