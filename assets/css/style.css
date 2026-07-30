@@ -38,6 +38,18 @@ a {
   color: inherit;
 }
 
+.inline-link {
+  color: inherit;
+  font-weight: 700;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.inline-link:hover,
+.inline-link:focus-visible {
+  color: #477b9f;
+}
+
 button,
 a {
   -webkit-tap-highlight-color: transparent;
