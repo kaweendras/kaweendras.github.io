@@ -21,6 +21,7 @@ const cvDownloadLink = document.querySelector('.download-button');
 document.querySelectorAll('[data-print]').forEach((button) => {
   button.addEventListener('click', () => {
     if (!cvDownloadLink) {
+      window.print();
       return;
     }
 
