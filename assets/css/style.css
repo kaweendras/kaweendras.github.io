@@ -530,6 +530,13 @@ h2 {
   font-size: 12.5px;
 }
 
+.project-details .project-links {
+  display: flex;
+  margin-top: 9px;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+}
+
 .tag-list {
   display: flex;
   margin: 11px 0 0;
