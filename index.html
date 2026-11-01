@@ -117,6 +117,7 @@
             <p class="company">XigeniX · Full-Stack Blockchain</p>
             <p>Building enterprise blockchain and AI products with AWS, CDK, Lambda, Solidity, Ethers.js and Node.js.</p>
             <ul class="impact-list">
+              <li>Developed the AI service for <a class="inline-link" href="https://fixby.com.au/" target="_blank" rel="noopener noreferrer">FIXBY AI</a>: home-maintenance chat, live voice and video with on-the-fly switching, prompt-driven repair guidance and tradie outreach integration.</li>
               <li>Built multi-model AI and RAG systems with OpenAI, Ollama, Pinecone and ChromaDB.</li>
               <li>Engineered Amazon Q Business tools for <a class="inline-link" href="https://www.smata.com/" target="_blank" rel="noopener noreferrer">SMATA Technologies</a> in the strata industry, with Lambda integrations and evaluation workflows.</li>
               <li>Delivered MyCarbon on Arbitrum with custom contracts and <a class="inline-link" href="https://www.lokblok.co/" target="_blank" rel="noopener noreferrer">LokBlok</a> Toughbox wallet security.</li>
@@ -152,7 +153,7 @@
       </div>
 
       <footer class="page-footer">
-        <span>salithakaweendra.github.io</span>
+        <span>kaweendra.is-a.dev</span>
         <span>01 / 02</span>
       </footer>
     </article>
@@ -180,6 +181,27 @@
             <button class="project-toggle" type="button" aria-expanded="true">
               <span class="project-number">01</span>
               <span>
+                <strong>FIXBY AI</strong>
+                <small>Home maintenance / Multimodal AI / Realtime</small>
+              </span>
+              <span class="toggle-mark" aria-hidden="true"></span>
+            </button>
+            <div class="project-details">
+              <p>Developed the AI service behind FIXBY, an Australian home-maintenance assistant that helps residents describe a problem, work through suitable DIY checks and connect with a tradesperson when professional help is needed. Built a shared case workflow across text chat, photos, voice notes and live conversations, carrying the problem details, attempted checks and outcomes through to a job request.</p>
+              <p><strong>Live voice &amp; video.</strong> Integrated Gemini Live through a WebSocket relay for spoken assistance with microphone audio and camera frames. Built a unified realtime session that lets residents switch between voice and video on the fly by turning the camera on or off, preserving the conversation and updating the assistant's awareness of what it can see. Added speech transcripts, interruption handling, session resumption and tools for recording case notes, reporting hazards and handing over to professional help.</p>
+              <p><strong>Prompting &amp; AI orchestration.</strong> Designed modular prompts assembled from the conversation stage, case state, available media and repair scope. Guidance asks focused questions, adapts repair instructions to the resident's DIY experience and distinguishes reported facts from visual observations. A shared hazard protocol keeps prompts and safety responses aligned, while Zod validates structured model output and the backend controls case transitions. Built provider adapters with LangChain for Google Gemini, OpenAI and OpenAI-compatible services, with prompt versioning and conversation evaluations.</p>
+              <p><strong>Outreach &amp; service integration.</strong> Connected confirmed jobs to a dedicated outreach service through the trades gateway, passing a concise brief with the trade, problem, checks already tried, suburb, urgency and photo count. The integration requests tradie discovery and outbound calls, with a job link for SMS follow-up, while keeping the resident's direct contact details out of the call brief. Built the backend with Node.js, TypeScript, Express, MongoDB/Mongoose and structured Pino logging.</p>
+              <p class="project-links">
+                <a class="inline-link" href="https://fixby.com.au/" target="_blank" rel="noopener noreferrer">FIXBY website</a>
+              </p>
+              <ul class="tag-list"><li>Gemini Live</li><li>Voice / Video / Chat</li><li>WebSockets</li><li>Prompt Engineering</li><li>LangChain</li><li>TypeScript / Node.js</li><li>MongoDB</li><li>AI Outreach</li></ul>
+            </div>
+          </article>
+
+          <article class="project">
+            <button class="project-toggle" type="button" aria-expanded="true">
+              <span class="project-number">02</span>
+              <span>
                 <strong>SKY AI (SMATA)</strong>
                 <small>Strata management / Enterprise AI / AWS</small>
               </span>
@@ -196,7 +218,7 @@
 
           <article class="project">
             <button class="project-toggle" type="button" aria-expanded="false">
-              <span class="project-number">02</span>
+              <span class="project-number">03</span>
               <span>
                 <strong>Prompt Bouncer</strong>
                 <small>Open source / AI safety / npm</small>
@@ -217,7 +239,7 @@
 
           <article class="project">
             <button class="project-toggle" type="button" aria-expanded="false">
-              <span class="project-number">03</span>
+              <span class="project-number">04</span>
               <span>
                 <strong>MyCarbon Platform</strong>
                 <small>Carbon credits / Smart contracts / Full-stack</small>
@@ -235,7 +257,7 @@
 
           <article class="project">
             <button class="project-toggle" type="button" aria-expanded="false">
-              <span class="project-number">04</span>
+              <span class="project-number">05</span>
               <span>
                 <strong>NFT Marketplaces</strong>
                 <small>Web3 / Smart contracts</small>
@@ -250,7 +272,7 @@
 
           <article class="project">
             <button class="project-toggle" type="button" aria-expanded="false">
-              <span class="project-number">05</span>
+              <span class="project-number">06</span>
               <span>
                 <strong>Trading Platform</strong>
                 <small>Fintech / Integration / Data</small>
@@ -265,7 +287,7 @@
 
           <article class="project">
             <button class="project-toggle" type="button" aria-expanded="false">
-              <span class="project-number">06</span>
+              <span class="project-number">07</span>
               <span>
                 <strong>Cloth Predictor</strong>
                 <small>Machine learning / API</small>
@@ -280,7 +302,7 @@
 
           <article class="project">
             <button class="project-toggle" type="button" aria-expanded="false">
-              <span class="project-number">07</span>
+              <span class="project-number">08</span>
               <span>
                 <strong>MathBuddy</strong>
                 <small>Education / Mobile backend</small>
