@@ -204,12 +204,14 @@
               <span class="toggle-mark" aria-hidden="true"></span>
             </button>
             <div class="project-details" hidden>
-              <p>An open-source TypeScript content-moderation guardrail for AI applications. It filters profanity, explicit content and inappropriate prompts, including text-to-image workflows.</p>
+              <p>Created and published Prompt Bouncer, an open-source npm library for moderating user prompts before they reach AI services. Built in TypeScript with no runtime dependencies, it provides a configurable, rule-based filtering layer for text-to-image generation, chat applications and user-generated content.</p>
+              <p><strong>Configurable moderation.</strong> Implemented word and phrase matching across profanity, explicit content, violence, hate speech, drugs and self-harm categories, with optional filtering for mild language. Added custom banned words, allow-list exceptions, case-sensitivity and word-boundary controls, plus normalisation for common character substitutions. Applications can choose which categories to enable and make decisions using low, medium or high severity results.</p>
+              <p><strong>Developer-focused API.</strong> Designed a typed class API and convenience functions for moderation, quick checks, flagged-word lookup and text cleaning. Results include the matched terms, categories, severity and cleaned text so developers can explain or handle a flagged prompt. Runtime configuration updates preserve custom word-list changes, and the repository includes integration examples for Express middleware, React hooks and Next.js API routes.</p>
               <p class="project-links">
                 <a class="inline-link" href="https://www.npmjs.com/package/prompt-bouncer" target="_blank" rel="noopener noreferrer">npm package</a>
                 <a class="inline-link" href="https://github.com/kaweendras/prompt-bouncer" target="_blank" rel="noopener noreferrer">GitHub repository</a>
               </p>
-              <ul class="tag-list"><li>Open Source</li><li>TypeScript</li><li>AI Safety</li><li>npm</li></ul>
+              <ul class="tag-list"><li>Open Source / MIT</li><li>TypeScript</li><li>npm</li><li>Content Moderation</li><li>Rule-Based Filtering</li><li>Zero Runtime Dependencies</li></ul>
             </div>
           </article>
 
@@ -218,13 +220,16 @@
               <span class="project-number">03</span>
               <span>
                 <strong>MyCarbon Platform</strong>
-                <small>Climate / Blockchain / Full-stack</small>
+                <small>Carbon credits / Smart contracts / Full-stack</small>
               </span>
               <span class="toggle-mark" aria-hidden="true"></span>
             </button>
             <div class="project-details" hidden>
-              <p>A full-stack carbon-footprint platform with custom smart contracts, <a class="inline-link" href="https://www.lokblok.co/" target="_blank" rel="noopener noreferrer">LokBlok</a> Toughbox wallet security and an L2 deployment on Arbitrum.</p>
-              <ul class="tag-list"><li>Solidity</li><li>Arbitrum</li><li>Node.js</li><li>Wallet Security</li></ul>
+              <p>Developed a full-stack platform for carbon-credit tokenisation and retirement, connecting business onboarding, carbon-asset records and blockchain transactions. Built across Solidity smart contracts, a React transaction portal, a Node.js wallet-integration backend and AWS serverless services.</p>
+              <p><strong>Carbon-credit lifecycle.</strong> Implemented upgradeable ERC-1155 contracts for issuing and transferring carbon credits, plus ERC-721 retirement certificates. A dedicated issuer contract retires credits by burning tokens and minting a certificate in one atomic transaction. Added role-based permissions, pause controls and token-recovery functions using OpenZeppelin and the UUPS upgrade pattern.</p>
+              <p><strong>Transaction portal &amp; wallet integration.</strong> Built a React and TypeScript interface for transaction initiation, authorisation and status tracking. Integrated <a class="inline-link" href="https://www.lokblok.co/" target="_blank" rel="noopener noreferrer">LokBlok</a> Toughbox key and signature ceremonies with an Express backend, connecting transaction simulation, signing and submission to the contract workflows. Used Ethers.js for EVM transaction handling and MongoDB for workflow records.</p>
+              <p><strong>Serverless services &amp; blockchain events.</strong> Built AWS CDK infrastructure with API Gateway, Lambda, Cognito, DynamoDB and S3 for business profiles, onboarding documents, carbon-asset certificates and transaction records. Implemented duplicate-request checks and Alchemy webhook processing to update transaction status, token identifiers and retired-credit amounts as blockchain events arrive.</p>
+              <ul class="tag-list"><li>Solidity</li><li>ERC-1155 / ERC-721</li><li>React / TypeScript</li><li>Ethers.js</li><li>LokBlok Toughbox</li><li>AWS CDK / Lambda</li><li>DynamoDB / MongoDB</li></ul>
             </div>
           </article>
 
